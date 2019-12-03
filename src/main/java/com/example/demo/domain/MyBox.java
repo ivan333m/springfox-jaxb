@@ -8,12 +8,14 @@ import lombok.Setter;
 
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlElements;
+import javax.xml.bind.annotation.XmlType;
 import java.util.List;
 
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
 @Setter
+@XmlType(name = "MyBox")
 public class MyBox {
 
     @XmlElement(name = "BoxName")
